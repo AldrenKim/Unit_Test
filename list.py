@@ -1,7 +1,7 @@
 from item import Item
 
 class List():
-  items: list[Item] = []
+  items: 'list[Item]' = []
   name: str = ''
 
   def __init__(self, name: str = 'List') -> None:

@@ -1,3 +1,4 @@
+from datetime import date
 import unittest
 from item import Item
 from list import List
@@ -18,7 +19,7 @@ class TestScenario1(unittest.TestCase):
 
   def test_input(self):
     c2 = self.list.check_has_input(self.input)
-    self.assertEqual(c2, True)
+    self.assertEqual(c2, False)
 
   def test_add_item(self):
     item = Item(self.input)
